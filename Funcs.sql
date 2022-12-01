@@ -5,7 +5,7 @@ var_saida text;
 
 BEGIN
 
-RAISE INFO 'CNPJ';
+RAISE INFO 'Mascarando CPF';
 var_saida := 'Finalizado';
 
 FOR result IN select nr_controle,substr(nr_doc_cpf, 1, 3) || '.' ||
