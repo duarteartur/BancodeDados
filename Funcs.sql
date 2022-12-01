@@ -1,4 +1,4 @@
-CREATE or replace FUNCTION MascaraCPF() returns text as $$
+CREATE or replace FUNCTION MascaraCPF() returns text as $$ --formata o CPF corretamente para o formato 000.000.000-00
 DECLARE
 result RECORD;
 var_saida text;
